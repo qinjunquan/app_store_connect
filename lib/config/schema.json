@@ -97,6 +97,12 @@
 			"alias": "delete_beta_build_localizations"
 		},
 		{
+			"alias": "create_bundle_id",
+			"http_method": "post",
+			"url": "https://api.appstoreconnect.apple.com/v1/bundleIds",
+			"http_body_type": "BundleIdCreateRequest"
+		},
+		{
 			"alias": "create_certificate",
 			"http_method": "post",
 			"url": "https://api.appstoreconnect.apple.com/v1/certificates",
@@ -115,7 +121,7 @@
 			"http_body_type": "DeviceCreateRequest"
 		},
 		{
-			"alias": "create_user_invitation", 
+			"alias": "create_user_invitation",
 			"url": "https://api.appstoreconnect.apple.com/v1/userInvitations",
 			"http_body_type": "UserInvitationCreateRequest",
 			"http_method": "post"
@@ -705,7 +711,7 @@
     {
       "type": "BundleIdPlatform",
       "values": [
-        "IOS", 
+        "IOS",
         "MAC_OS"
       ]
     },
@@ -716,14 +722,14 @@
         "FINANCE",
         "TECHNICAL",
         "SALES",
-        "MARKETING", 
+        "MARKETING",
         "DEVELOPER",
         "ACCOUNT_HOLDER",
-        "READ_ONLY", 
+        "READ_ONLY",
         "APP_MANAGER",
         "ACCESS_TO_REPORTS",
         "CUSTOMER_REPORTS"
       ]
-    } 
+    }
   ]
 }
